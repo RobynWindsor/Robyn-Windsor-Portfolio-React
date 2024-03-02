@@ -1,8 +1,8 @@
-import react from 'react';
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { NavLink } from 'react-router-dom';
 import './NavBar.css';
 
 function NavBar() {
@@ -16,13 +16,18 @@ function NavBar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link id="about" href="#about">
+              <Nav.Link as={NavLink} to="/about" id="about" href="#about">
                 About
               </Nav.Link>
-              <Nav.Link id="projects" href="#projects">
+              <Nav.Link
+                as={NavLink}
+                to="/projects"
+                id="projects"
+                href="#projects"
+              >
                 Projects
               </Nav.Link>
-              <Nav.Link id="contact" href="#contact">
+              <Nav.Link as={NavLink} to="/contact" id="contact" href="#contact">
                 Contact
               </Nav.Link>
             </Nav>
