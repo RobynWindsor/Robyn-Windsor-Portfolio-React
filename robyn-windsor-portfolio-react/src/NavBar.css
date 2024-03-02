@@ -1,0 +1,26 @@
+:root {
+  --primary-colour: #15112b;
+  --linear-colour: #4b6a88;
+  --secondary-colour: #f48599;
+  --third-colour: #132743;
+  --fourth-colour: #e8630a;
+  --box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  --text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  --font: ;
+}
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home,
+#about,
+#projects,
+#contact {
+  color: white;
+}
+
+.navbar-toggler {
+  color: white;
+}
