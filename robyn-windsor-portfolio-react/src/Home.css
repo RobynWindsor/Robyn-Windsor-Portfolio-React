@@ -1,4 +1,22 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+.silkscreen-regular,
+h2,
+Nav,
+section {
+  font-family: 'Silkscreen', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.silkscreen-bold,
+h1 {
+  font-family: 'Silkscreen', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+root {
   --primary-colour: #15112b;
   --linear-colour: #4b6a88;
   --secondary-colour: #f48599;
@@ -31,4 +49,11 @@ h2 {
   justify-content: center;
   color: var(--secondary-colour);
   font-size: 10px;
+}
+
+.about-me {
+  display: flex;
+  text-align: center;
+  color: white;
+  font-size: 5px;
 }
