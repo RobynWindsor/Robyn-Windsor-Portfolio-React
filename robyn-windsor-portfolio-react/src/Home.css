@@ -1,0 +1,34 @@
+:root {
+  --primary-colour: #15112b;
+  --linear-colour: #4b6a88;
+  --secondary-colour: #f48599;
+  --third-colour: #132743;
+  --fourth-colour: #e8630a;
+  --box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  --text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  --font: ;
+}
+
+body {
+  background: linear-gradient(
+    85deg,
+    rgba(31, 27, 52) 0%,
+    rgba(68, 65, 85) 100%
+  );
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-top: 60px;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  color: var(--secondary-colour);
+  font-size: 10px;
+}
