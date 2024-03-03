@@ -10,24 +10,19 @@ function NavBar() {
     <div>
       <Navbar expand="lg" className="">
         <Container>
-          <Navbar.Brand id="home" href="#home">
+          <Navbar.Brand as={NavLink} to="/home" id="home">
             RW
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link as={NavLink} to="/about" id="about" href="#about">
+              <Nav.Link as={NavLink} to="/about" id="about">
                 About
               </Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to="/projects"
-                id="projects"
-                href="#projects"
-              >
+              <Nav.Link as={NavLink} to="/projects" id="projects">
                 Projects
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/contact" id="contact" href="#contact">
+              <Nav.Link as={NavLink} to="/contact" id="contact">
                 Contact
               </Nav.Link>
             </Nav>
