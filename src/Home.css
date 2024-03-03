@@ -16,7 +16,7 @@ h1 {
   font-style: normal;
 }
 
-root {
+:root {
   --primary-colour: #15112b;
   --linear-colour: #4b6a88;
   --secondary-colour: #f48599;
@@ -39,15 +39,15 @@ h1 {
   display: flex;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: white !important;
   font-size: 20px;
-  margin-top: 60px;
+  margin-top: 60px !important;
 }
 
 h2 {
   display: flex;
   justify-content: center;
-  color: var(--secondary-colour);
+  color: var(--secondary-colour) !important;
   font-size: 10px;
 }
 
