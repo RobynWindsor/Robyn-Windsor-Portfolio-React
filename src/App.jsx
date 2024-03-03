@@ -5,7 +5,6 @@ import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Projects from './Projects';
-import PageNotFound from './PageNotFound';
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
         <Route path="/about" element={<About />} exact></Route>
         <Route path="/projects" element={<Projects />} exact></Route>
         <Route path="/contact" element={<Contact />} exact></Route>
-        <Route path="*" element={<PageNotFound />}></Route>
       </Routes>
     </BrowserRouter>
   );
