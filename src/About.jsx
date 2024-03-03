@@ -1,5 +1,6 @@
 import react from 'react';
 import NavBar from './NavBar';
+import './Home.css';
 
 function About() {
   return (
