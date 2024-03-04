@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Swal from 'sweetalert2';
 import NavBar from './NavBar';
 import emailjs from '@emailjs/browser';
+import './Contact.css';
+import Button from 'react-bootstrap/Button';
 
 function Contact() {
   // create state variable that holds the form data
@@ -60,7 +63,7 @@ function Contact() {
       const templateId = 'contact_form';
       const publicKey = '8git3JVuOnc7ohSsY';
 
-      // Creating a new object that conatins dynamic template params
+      // Creating a new object that contains dynamic template params
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
@@ -72,23 +75,41 @@ function Contact() {
         .send(serviceId, templateId, templateParams, publicKey)
         .then((response) => {
           console.log('Email sent successfully!', response);
+          setTimeout(() => {
+            Swal.fire({
+              icon: 'success',
+              title: 'Email Sent',
+              text: 'Your message has been successfully sent!',
+              customClass: {
+                popup: 'my-popup',
+                title: 'my-title',
+                confirmButton: 'my-confirm-button',
+              },
+              buttonsStyling: false,
+            });
+
+            setFormData({
+              name: '',
+              email: '',
+              subject: '',
+              message: '',
+            });
+
+            // setSubmitting will clear the form once form is validated and submitted by setting submitting state to false
+            setSubmitting(false);
+          }, 500);
+        })
+        .catch((error) => {
+          console.error('Error sending email:', error);
+          // Handle error scenarios here, if needed
         });
-
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
-      });
-
-      // setSubmitting will clear the form once form is validated and submitted by setting submitting state to false
-      setSubmitting(false);
     }
   };
 
   return (
     <div>
       <NavBar />
+      <h1> Contact Me</h1>
       <div className="container">
         <form className="contactForm" onSubmit={handleSubmit}>
           <div className="nameForm">
@@ -139,9 +160,15 @@ function Contact() {
               )}
             </div>
           </div>
-          <button className="contactButton" type="submit" disabled={submitting}>
+          <Button
+            variant="outline-light"
+            className="contactButton"
+            type="submit"
+            disabled={submitting}
+          >
             Submit
-          </button>
+          </Button>
+          {''}
         </form>
       </div>
     </div>
