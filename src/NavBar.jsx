@@ -12,7 +12,7 @@ function NavBar() {
     <div>
       <Navbar expand="lg" className="">
         <Container>
-          <Navbar.Brand as={NavLink} to="/home" id="home">
+          <Navbar.Brand as={NavLink} to="/" id="home">
             RW
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
