@@ -7,7 +7,8 @@ h1 {
   font-style: normal;
 }
 
-.subHeader {
+.subHeader,
+section {
   font-family: 'Montserrat', sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -48,6 +49,14 @@ h2 {
 .about-me {
   display: flex;
   text-align: center;
+  color: white;
+  font-size: 10px;
+}
+
+.introduction {
+  display: flex;
+  text-align: center;
+  justify-content: center;
   color: white;
   font-size: 10px;
 }
