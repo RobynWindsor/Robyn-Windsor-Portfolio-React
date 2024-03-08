@@ -1,18 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cutive+Mono&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Silkscreen&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
 
-.silkscreen-regular,
-h2,
-Nav,
-section {
-  font-family: 'Silkscreen', sans-serif;
+.bebas-neue-regular,
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.silkscreen-bold,
-h1 {
-  font-family: 'Silkscreen', sans-serif;
-  font-weight: 700;
+.subHeader {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -40,7 +38,7 @@ h1 {
   justify-content: center;
   text-align: center;
   color: white !important;
-  font-size: 20px;
+  font-size: 50px;
   margin-top: 60px !important;
 }
 
@@ -48,12 +46,12 @@ h2 {
   display: flex;
   justify-content: center;
   color: var(--secondary-colour) !important;
-  font-size: 10px;
+  font-size: 20px;
 }
 
 .about-me {
   display: flex;
   text-align: center;
   color: white;
-  font-size: 5px;
+  font-size: 10px;
 }

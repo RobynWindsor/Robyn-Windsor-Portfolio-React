@@ -7,7 +7,7 @@ function Home() {
     <div>
       <NavBar />
       <h1>Robyn Windsor</h1>
-      <h2>Frontend Engineer</h2>
+      <h2 className="subHeader">FRONTEND ENGINEER</h2>
     </div>
   );
 }
