@@ -1,0 +1,43 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+.silkscreen-regular,
+h2,
+Nav,
+section {
+  font-family: 'Silkscreen', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.silkscreen-bold,
+h1 {
+  font-family: 'Silkscreen', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+} */
+
+/* :root {
+  --primary-colour: #15112b;
+  --linear-colour: #4b6a88;
+  --secondary-colour: #f48599;
+  --third-colour: #132743;
+  --fourth-colour: #e8630a;
+  --box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  --text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  --font: ;
+}
+
+body {
+  background: linear-gradient(
+    85deg,
+    rgba(31, 27, 52) 0%,
+    rgba(68, 65, 85) 100%
+  );
+}
+
+.about-me {
+  display: flex;
+  text-align: center;
+  color: white;
+  font-size: 10px;
+} */
