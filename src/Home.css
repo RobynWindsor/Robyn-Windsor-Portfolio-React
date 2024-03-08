@@ -26,11 +26,7 @@ h1 {
 }
 
 body {
-  background: linear-gradient(
-    85deg,
-    rgba(31, 27, 52) 0%,
-    rgba(68, 65, 85) 100%
-  );
+  background: #132743;
 }
 
 h1 {
@@ -39,7 +35,7 @@ h1 {
   text-align: center;
   color: white !important;
   font-size: 50px;
-  margin-top: 60px !important;
+  margin-top: 100px !important;
 }
 
 h2 {
