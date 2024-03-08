@@ -15,6 +15,11 @@ section {
   font-style: normal;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
   --primary-colour: #15112b;
   --linear-colour: #4b6a88;
