@@ -7,13 +7,19 @@ h1 {
   font-style: normal;
 }
 
-.subHeader {
+.subHeader,
+section {
   font-family: 'Montserrat', sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
   --primary-colour: #15112b;
   --linear-colour: #4b6a88;
@@ -48,6 +54,14 @@ h2 {
 .about-me {
   display: flex;
   text-align: center;
+  color: white;
+  font-size: 10px;
+}
+
+.introduction {
+  display: flex;
+  text-align: center;
+  justify-content: center;
   color: white;
   font-size: 10px;
 }
