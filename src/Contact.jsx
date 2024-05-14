@@ -85,7 +85,7 @@ function Contact() {
                 title: 'my-title',
                 confirmButton: 'my-confirm-button',
               },
-              buttonsStyling: false,
+              buttonsStyling: true,
             });
 
             setFormData({
